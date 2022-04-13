@@ -17,7 +17,7 @@ export class MovieCardComponent implements OnInit {
 
   ngOnInit(): void {
     this.bgImage =
-      ' https://image.tmdb.org/t/p/w500' + this.movieResultCard.poster_path;
+      ' https://image.tmdb.org/t/p/w500' + this.movieResultCard?.poster_path;
   }
 
   getImagePath(path: string): string {

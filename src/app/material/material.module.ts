@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { MatCardModule } from '@angular/material/card';
@@ -16,7 +16,8 @@ const MaterialModules = [
 ];
 @NgModule({
   declarations: [],
-  imports: [CommonModule, MatCardModule],
+  imports: MaterialModules,
   exports: MaterialModules,
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class MaterialModule {}

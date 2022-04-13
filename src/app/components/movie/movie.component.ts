@@ -20,6 +20,7 @@ export class MovieComponent implements OnInit {
   isLoadmore = false;
   loadMoreScreenshots = [];
   moviePicsURL = '';
+  _18plus = 'A 18+';
   constructor(
     private activatedRoute: ActivatedRoute,
     private movieService: MovieService,

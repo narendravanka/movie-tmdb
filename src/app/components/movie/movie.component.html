@@ -10,7 +10,7 @@
         <h3 [ngStyle]="{ color: 'smokewhite' }">U/A 13+</h3>
       </div>
       <ng-template #elseTemplate>
-        <h3 style="color: rgb(90, 3, 3)">A 18+</h3></ng-template
+        <h3 style="color: rgb(90, 3, 3)">{{ _18plus }}</h3></ng-template
       >
       <h1>{{ movie?.original_title }}</h1>
       <h4 class="background-text-color">{{ movie?.tagline }}</h4>
